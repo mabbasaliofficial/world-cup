@@ -1,4 +1,9 @@
-/* Common Style */
+/* --------------------------------------------------------
+--------------------CSS STYLE START------------------------
+-----------------------------------------------------------*/
+
+
+/* -------------------Common Style Start------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +12,21 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-/* Header Style Start */
-#header{
+.button{
+    text-decoration: none;
+    background-color: #DD0000;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: rgb(14, 14, 233);
+}
+
+/* --------------------Common Style End-------------------- */
+
+/* ----------------Header Style Start---------------------- */
+#banner{
     width: 80%;
     height: 75vh;
     border-radius: 15px;
@@ -17,44 +35,36 @@ body{
     align-items: center;
     margin: 50px auto;
 }
-.header-text{
+.banner-text{
     width: 50%;
     padding: 0px 50px 0px 50px;
+    
 }
-.header-image{
-    width: 50%;
-    padding: 50px 10px 0px 10px;
-}
-.header-image img{
-    width: 100%;
-    padding: 0px 50px 5px 50px;
-}
-.header-text h1{
+.banner-text h1{
     font-weight: 900;
     font-size: 50px;
     color: white;
 }
-.header-text p{
+.banner-text p{
     font-weight: 400;
     font-size: 1em;
     color: white;
     margin-bottom: 25px;
 }
-.button:hover{
-    background-color: rgb(14, 14, 233);
+.banner-image{
+    width: 50%;
+    padding: 50px 10px 0px 10px;
 }
-.button{
-    text-decoration: none;
-    background-color: #DD0000;
-    padding: 10px 20px;
-    color: white;
-    border-radius: 5px;
+.banner-image img{
+    width: 100%;
+    padding: 0px 50px 5px 50px;
 }
-/* Header Style End */
 
-/* Main Section Start */
+/* ------------------Header Style End------------------- */
+
+/* -----------------Main Section Start------------------ */
+
 section{
-    margin: 100px auto;
     display: flex;
     justify-content: center;
 }
@@ -82,6 +92,14 @@ section{
     background-color: white;
     color: black;
 }
+.blogs{
+    margin-left: 5px;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
 .blog{
     width: 250px;
     height: 350px;
@@ -89,7 +107,7 @@ section{
     border-radius: 10px;
 }
 .blog-image img{
-    width: 250px;
+    width: 100%;
 }
 .blog-text{
     padding: 20px;
@@ -114,19 +132,15 @@ section{
     align-items: center;
 }
 
-.blogs{
-    margin-left: 5px;
-    width: 60%;
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
-}
 .match-schedule{
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 50px;
+}
+.match-schedule img{
+    padding: 10px;
+    width: 100%;
 }
 .schedule-blog{
     width: 250px;
@@ -142,8 +156,9 @@ section{
     display: none;
     text-align: center;
 }
-/* Main Section End */
-/* Footer Style Start */
+/* --------------------Main Section End------------------ */
+
+/* -------------------Footer Style Start----------------- */
 footer{
     margin-top: 50px;
     text-align: center;
@@ -158,30 +173,33 @@ footer h1{
     font-size: 50px;
     padding-bottom: 20px;
 }
-hr{
+footer hr{
     margin-left: 10%;
     margin-right: 10%;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-ul{
+footer ul{
     padding-top: 25px;
     padding-bottom: 25px;
     display: flex;
     justify-content: center;
     gap: 25px;
 }
-li{
+footer ul li{
     list-style: none;
 }
-li a{
+footer ul li a{
     text-decoration: none;
     color: #B9B9B9;
 }
-nav > a{
+footer nav > a{
     padding: 20px;
     border-radius: 5px;
 }
-/* Footer Style End */
+/* ----------------------Footer Style End--------------------- */
 
 
+/* --------------------------------------------------------
+----------------------CSS STYLE END------------------------
+-----------------------------------------------------------*/
